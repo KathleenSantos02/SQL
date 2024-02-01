@@ -1,0 +1,18 @@
+Select *
+From superstore
+Order By price desc;
+
+How much stock in each category?
+Select SUM(stock_quantity), category
+From superstore
+Group BY category;
+
+What is the average price in each category?
+Select AVG(price), category
+From superstore
+Group By category;
+
+The prices of each item in Kitchen Supplies?
+Select price,item_name,category
+From superstore
+Where category = 'Kitchen Supplies';
